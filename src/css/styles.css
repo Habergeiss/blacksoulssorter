@@ -65,7 +65,7 @@ body {
   border-image-source: url("../assets/border.png");
   border-style: solid;
   text-align: center;
-  padding: 10px;
+  padding: 16px;
   grid-column: 2 / 3;
   cursor: pointer;
 }
