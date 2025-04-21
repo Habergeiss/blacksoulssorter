@@ -24,8 +24,12 @@ dataSet[dataSetVersion].characterData = [
     img: "9/98/Dorothy_Dialogue.png",
   },
     {
-    name: "Victoria",
+    name: "Victoria (Black Souls II)",
     img: "7/70/Victoria_Dialogue_HD.png",
+  },
+    {
+    name: "Victoria (Black Souls I)",
+    img: "8/82/Victoria_Dialogue.png",
   },
     {
     name: "Goose",
