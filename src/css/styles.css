@@ -45,7 +45,6 @@ body {
   margin: 0px auto;
   display: grid;
   grid-gap: 5px;
-  width: 640px;
   background-image: url(https://static.wikitide.net/blacksoulswiki/8/8d/BKSDialogueModify.png);
 }
 
