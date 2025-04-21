@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   background-color: #07090D;
   color: #707A93;
 }
@@ -43,9 +43,8 @@ body {
 .sorter {
   margin: 0px auto;
   display: grid;
-  grid-template-columns: 120px 1fr 120px;
   grid-gap: 5px;
-  width: 420px;
+  width: 640px;
   background-image: url(https://static.wikitide.net/blacksoulswiki/8/8d/BKSDialogueModify.png);
 }
 
@@ -115,15 +114,13 @@ body {
 }
 
 .sorter > .image {
-  width: 120px;
-  height: 120px;
-  margin: auto;
+  width: 220px;
+  height: 220px;
   grid-row: 1 / 7;
   cursor: pointer;
 }
 
 .sorter > .text {
-  width: 120px;
   height: 60px;
   display: none;
   color: #707A93;
@@ -215,17 +212,18 @@ label:hover {
 }
 
 .result {
-  height: 15px;
+  height: 32px;
   margin-bottom: -1px;
   display: grid;
   width: 211px;
   grid-template-columns: repeat(2, 1fr);
   border: 1px solid white;
   margin-right: 5px;
+  align-content: center;
 }
 
 .result.image {
-  height: 175px;
+  height: 210px;
 }
 
 .result.image img {
@@ -247,6 +245,7 @@ label:hover {
   padding: 1px 3px 1px 0.5em;
   grid-column: 1 / 2;
   text-align: right;
+  align-content: center;
 }
 
 .result.image .left {
