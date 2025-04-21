@@ -1,9 +1,8 @@
 body {
   font-family: serif;
   font-size: 20px;
-  font-weight: bold;
   background-color: #07090D;
-  color: #707A93;
+  color: #C3C3C3;
 }
 
 .container {
@@ -17,6 +16,13 @@ body {
   margin: 1em auto;
   width: 500px;
   display: none;
+  border-image-slice: 16 16 16 16;
+  border-image-width: 16px 16px 16px 16px;
+  border-image-repeat: repeat repeat;
+  border-image-source: url("../assets/border.png");
+  border-style: solid;
+  padding: 10px;
+
 }
 
 .progressbar {
@@ -30,7 +36,7 @@ body {
 .progresstext {
   position: absolute;
   width: 492px;
-  margin: 3px 0px;
+  margin: -20px 0px;
   text-align: center;
   font-size: 0.7em;
 }
@@ -42,33 +48,43 @@ body {
 }
 
 .sorter {
+  border-image-slice: 16 16 16 16;
+  border-image-width: 16px 16px 16px 16px;
+  border-image-repeat: repeat repeat;
+  border-image-source: url("../assets/border.png");
+  border-style: solid;
   margin: 0px auto;
   display: grid;
-  grid-gap: 5px;
   background-image: url(https://static.wikitide.net/blacksoulswiki/8/8d/BKSDialogueModify.png);
 }
 
 .button {
-  border: 1px solid black;
-  border-color: white;
+  border-image-slice: 16 16 16 16;
+  border-image-width: 16px 16px 16px 16px;
+  border-image-repeat: repeat repeat;
+  border-image-source: url("../assets/border.png");
+  border-style: solid;
   text-align: center;
-  padding: 10%;
+  padding: 10px;
   grid-column: 2 / 3;
   cursor: pointer;
 }
 
 .starting.start.button {
   grid-row: span 6;
+  align-content: center;
 }
 
 .starting.load.button {
   grid-row: span 3;
   display: none;
+  align-content: center;
 }
 
 .sorting.button, .finished.button {
   grid-row: span 2;
   display: none;
+  align-content: center;
 }
 
 .loading.button {
@@ -118,33 +134,43 @@ body {
   height: 220px;
   grid-row: 1 / 7;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .sorter > .text {
   height: 60px;
   display: none;
-  color: #707A93;
 }
 
 .sorter > .text > p {
-  margin: 0.5em 5px 0px;
   width: calc(100%-10px);
   text-align: center;
   font-size: 0.8em;
   line-height: 1.5em;
-  color: #707A93;
 }
 
 .sorter > .left {
   grid-column: 1 / 2;
-  border: 1px solid #000000;
   font-size: 24px;
+  border-image-slice: 16 16 16 16;
+  border-image-width: 16px 16px 16px 16px;
+  border-image-repeat: repeat repeat;
+  border-image-source: url("../assets/border.png");
+  border-style: solid;
+  align-content: center;
+  padding: 8px;
 }
 
 .sorter > .right {
   grid-column: 3 / 4;
-  border: 1px solid #000000;
   font-size: 24px;
+  border-image-slice: 16 16 16 16;
+  border-image-width: 16px 16px 16px 16px;
+  border-image-repeat: repeat repeat;
+  border-image-source: url("../assets/border.png");
+  border-style: solid;
+  align-content: center;
+  padding: 8px;
 }
 
 .options {
@@ -198,6 +224,7 @@ label:hover {
   width: 80%;
   margin: 2em auto;
   background-color: #07090D;
+  font-weight: bold;
 }
 
 @media all and (min-width: 600px) {
@@ -276,14 +303,20 @@ label:hover {
   display: block;
   text-align: center;
   font-size: 0.6875em;
-  width: 80%;
+  width: auto;
   line-height: 1.2em;
+  border-image-slice: 16 16 16 16;
+  border-image-width: 16px 16px 16px 16px;
+  border-image-repeat: repeat repeat;
+  border-image-source: url("../assets/border.png");
+  border-style: solid;
+  padding: 16px;
+  background-image: url(https://static.wikitide.net/blacksoulswiki/8/8d/BKSDialogueModify.png);
 }
 
 a {
-  color: #990000;
-  font-weight: bold;
-  text-decoration: none;
+  color: #ffa0a0;
+  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -292,5 +325,5 @@ a:hover {
 }
 
 a:visited {
-  color: #6600FF;
+  color: #ffa0a0;
 }
