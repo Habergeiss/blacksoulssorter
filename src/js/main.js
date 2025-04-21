@@ -424,7 +424,7 @@ function pick(sortType) {
   if (leftIndex < 0) {
     timeTaken = timeTaken || new Date().getTime() - timestamp;
 
-    progressBar(`Choice No. ${battleNo} - Completed!`, 100);
+    progressBar(`Completed!`, 100);
 
     result();
   } else {
