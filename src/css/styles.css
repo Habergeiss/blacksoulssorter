@@ -114,8 +114,8 @@ body {
 }
 
 .sorter > .image {
-  width: 215px;
-  height: 215px;
+  width: 220px;
+  height: 220px;
   grid-row: 1 / 7;
   cursor: pointer;
 }
