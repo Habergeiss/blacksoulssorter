@@ -294,7 +294,6 @@ label:hover {
   border: 1px solid white;
   margin-right: 5px;
   align-content: center;
-  animation: fadeInResult .25s ease-in-out;
   background-image: url(https://static.wikitide.net/blacksoulswiki/8/8d/BKSDialogueModify.png);
 }
 
