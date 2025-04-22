@@ -64,7 +64,6 @@ body {
 .progressbar {
   position: relative;
   width: 492px;
-  border: 1px solid black;
   padding: 3px;
   margin: 2px 0px;
 }
@@ -174,7 +173,7 @@ body {
 }
 
 .sorter > .text {
-  height: 60px;
+  height: 64px;
   display: none;
   padding: 10px;
 }
@@ -195,6 +194,7 @@ body {
   border-image-source: url("../assets/border.png");
   border-style: solid;
   align-content: center;
+  width: 220px;
   padding: 8px;
 }
 
@@ -207,6 +207,7 @@ body {
   border-image-source: url("../assets/border.png");
   border-style: solid;
   align-content: center;
+  width: 220px;
   padding: 8px;
 }
 
