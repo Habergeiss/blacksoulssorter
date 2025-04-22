@@ -56,6 +56,7 @@ body {
   border-image-repeat: repeat repeat;
   border-image-source: url("../assets/border.png");
   border-style: solid;
+  background-image: url(https://static.wikitide.net/blacksoulswiki/8/8d/BKSDialogueModify.png);
   padding: 16px;
   animation: zoomInX .15s ease-in-out;
 }
