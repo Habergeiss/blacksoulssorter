@@ -1,8 +1,43 @@
+@font-face {
+  font-family: "VL-Gothic";
+  src: url("../assets/VL-Gothic-Regular.ttf");
+}
+
 body {
-  font-family: serif;
+  font-family: VL-Gothic, serif;
   font-size: 24px;
   background-color: #07090D;
   color: #C3C3C3;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomInY {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes zoomInX {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 .container {
@@ -22,7 +57,7 @@ body {
   border-image-source: url("../assets/border.png");
   border-style: solid;
   padding: 10px;
-
+  animation: zoomInX .15s ease-in-out;
 }
 
 .progressbar {
@@ -56,6 +91,7 @@ body {
   margin: 0px auto;
   display: grid;
   background-image: url(https://static.wikitide.net/blacksoulswiki/8/8d/BKSDialogueModify.png);
+  animation: zoomInY .25s ease-in-out;
 }
 
 .button {
@@ -215,6 +251,13 @@ label:hover {
   display: none;
   text-align: center;
   font-size: 0.75em;
+  border-image-slice: 16 16 16 16;
+  border-image-width: 16px 16px 16px 16px;
+  border-image-repeat: repeat repeat;
+  border-image-source: url("../assets/border.png");
+  border-style: solid;
+  background-image: url(https://static.wikitide.net/blacksoulswiki/8/8d/BKSDialogueModify.png);
+  padding: 14px;
 }
 
 .results {
@@ -224,7 +267,6 @@ label:hover {
   width: 80%;
   margin: 2em auto;
   background-color: #07090D;
-  font-weight: bold;
 }
 
 @media all and (min-width: 600px) {
@@ -250,7 +292,20 @@ label:hover {
   border: 1px solid white;
   margin-right: 5px;
   align-content: center;
+  animation: fadeInResult .25s ease-in-out;
   background-image: url(https://static.wikitide.net/blacksoulswiki/8/8d/BKSDialogueModify.png);
+}
+
+@keyframes fadeInResult {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 0% 0%;
+  }
+
+  100% {
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+  }
 }
 
 .result.image {
@@ -313,6 +368,7 @@ label:hover {
   border-style: solid;
   padding: 16px;
   background-image: url(https://static.wikitide.net/blacksoulswiki/8/8d/BKSDialogueModify.png);
+  animation: zoomInY .25s ease-in-out;
 }
 
 a {
