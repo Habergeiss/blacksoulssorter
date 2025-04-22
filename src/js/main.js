@@ -592,7 +592,9 @@ function generateImage() {
   const tzoffset = (new Date()).getTimezoneOffset() * 60000;
   const filename = 'sort-' + (new Date(timeFinished - tzoffset)).toISOString().slice(0, -5).replace('T', '(') + ').png';
 
-  html2canvas(document.querySelector('.results')).then(canvas => {
+  html2canvas(document.querySelector('.results'), {
+    scale: 1.75
+  }).then(canvas => {
     const dataURL = canvas.toDataURL();
     const imgButton = document.querySelector('.finished.getimg.button');
     const resetButton = document.createElement('a');
