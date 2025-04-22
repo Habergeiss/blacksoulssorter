@@ -263,7 +263,7 @@ label:hover {
 }
 
 .results {
-  font-size: 0.75em;
+  font-size: 0.7em;
   display: flex;
   align-content: flex-start;
   width: 80%;
@@ -274,7 +274,7 @@ label:hover {
 @media all and (min-width: 600px) {
   .results {
     flex-flow: column wrap;
-    max-height: calc(5 * (175px + 2px) + 1 * (15px + 2px));
+    max-height: 780px;
     /* 2px for borders */
   }
 }
@@ -289,7 +289,7 @@ label:hover {
   margin-bottom: -1px;
   padding: 4px 0px 4px 0px;
   display: grid;
-  width: 211px;
+  width: 280px;
   grid-template-columns: repeat(2, 1fr);
   border: 1px solid white;
   margin-right: 5px;
@@ -329,10 +329,10 @@ label:hover {
 }
 
 .result > .left {
-  width: 35px;
+  width: 16px;
   padding: 1px 3px 1px 0.5em;
   grid-column: 1 / 2;
-  text-align: right;
+  text-align: center;
   align-content: center;
 }
 
@@ -348,7 +348,7 @@ label:hover {
 }
 
 .result > .right {
-  width: 160px;
+  width: 250px;
   padding: 1px 0em 1px 0em;
   grid-column: 2 / 3;
   border-left: 1px solid #000;
